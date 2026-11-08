@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#06151a">
+<meta name="description" content="Mini sudoku, 1 to 6. Easy, medium and hard sequences with notes.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Seis">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.png">
+<title>Seis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<div class="app" id="app">
+  <section class="home" id="home"></section>
+  <section class="game" id="game" hidden>
+    <div class="top">
+      <div>
+        <div class="label" id="track">Easy</div>
+        <div class="lvl" id="lvl">1</div>
+      </div>
+      <div class="clock" id="clock" aria-label="Time on this puzzle">0:00</div>
+    </div>
+    <div class="board" id="board" role="grid" aria-label="Six by six sudoku"></div>
+    <div class="pad" id="pad"></div>
+    <div class="bar">
+      <button class="tool" id="bHome"><b>&#8962;</b>Home</button>
+      <button class="tool" id="bRestart"><b>&#8635;</b>Restart</button>
+      <button class="tool" id="bUndo"><b>&#8630;</b>Undo</button>
+      <button class="tool" id="bErase"><b>&#10005;</b>Erase</button>
+      <button class="tool" id="bNotes" aria-pressed="false"><b>&#9998;</b>Notes</button>
+    </div>
+  </section>
+</div>
+<div id="modal"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
